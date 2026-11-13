@@ -1,27 +1,21 @@
 <!--
-  Schritt 7: Startseite eures IG
-  Ersetzt die TODOs durch eigenen Text. Markdown ist erlaubt.
-  Diese Seite ist die erste, die man auf GitHub Pages sieht.
+  Startseite des IG
 -->
 
 ### Use Case
 
-TODO: Beschreibt in zwei bis drei Sätzen, welche Situation euer IG abbildet.
-Wer erfasst die Daten, wer liest sie, und wofür werden sie gebraucht?
+Eine Hausarztpraxis erfasst Arzneimittelallergien ihrer Patientinnen und Patienten strukturiert und mit Codes.
+Eine Notfallstation liest diese Angaben, um rasch zu erkennen, welche Medikamente gefährlich sind und wie schwer eine Reaktion ausfallen kann.
 
 ### Scope
 
-TODO: Was deckt dieses IG ab, und was bewusst nicht?
+Dieses IG deckt Allergien und Intoleranzen gegen Arzneimittel ab (AllergyIntolerance mit category = medication), erfasst von einer Ärztin oder einem Arzt.
+Nicht abgedeckt sind Allergien gegen Nahrungsmittel, Umweltstoffe oder biologische Stoffe sowie die Behandlung einer Reaktion.
 
 ### Artefakte
 
-TODO: Ergänzt pro Artefakt einen Satz, wofür es da ist.
-
-* [DG Arzneimittelallergie](StructureDefinition-dg-medication-allergy.html): TODO
-* [Titel eures Beispiels](AllergyIntolerance-TODO_Name.html): TODO
-
-<!-- TODO_Name ist der Name hinter "Instance:" in beispiele.fsh,
-     z. B. AllergyIntolerance-PenicillinAllergieAnna.html -->
+* [DG Arzneimittelallergie](StructureDefinition-dg-medication-allergy.html): Profil auf Basis von CH Core AllergyIntolerance mit den Regeln für Arzneimittelallergien und der Invariante dg-allergy-1 (bestätigte Allergie braucht eine Reaktion).
+* [Penicillinallergie Anna Muster](AllergyIntolerance-PenicillinAllergieAnna.html): Beispiel einer bestätigten Penicillinallergie mit Urtikaria, erfasst von Dr. med. Sara Keller.
 
 ### Abhängigkeiten
 
@@ -29,6 +23,6 @@ Dieses IG baut auf [CH Core 6.0.0](https://fhir.ch/ig/ch-core/6.0.0/) auf.
 
 ### Autorin oder Autor
 
-TODO: Euer Name.
+Kim Wiegand
 
 <p style="font-size:smaller">Erstellt im Lab des Moduls Data Standards in Healthcare, ZHAW, HS26. Kein offizieller Standard.</p>
